@@ -1,108 +1,95 @@
-html, body{
-	font-size:16px;
-	color: #dfdfdf;
-	background-color: #063647; 
+body {
+	font-family:'Courier New', Courier, monospace;
+	font-size: 120%;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(20deg, #a8a8a8, #1c1c1c);
+	color: #333;
 }
-
-a {
-  color: #00d1b2;
+footer {
+	background-color: #343a40;
+	color: #fff;
+	padding: 1px;
+	text-align: center;
 }
-
-a:hover {
-  color: #00d1b2;
+nav {
+	background-color: #343a40;
+	color: #000;
+	padding: 10px 0;
+	text-align: center;
+	position: fixed;
+	width: 60%;
+	top: 0;
+	z-index: 1000;
+	margin-left: 20%;
+	margin-right: 20%;
 }
-
-section{
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
-
-.section-1 {
-	background: #063647;
+nav ul li {
+	display: inline;
+	margin-right: 20px;
 }
-
-.section-2 {
-	background-color: #052D3D;
-}
-
-.section-3 {
-	background-color: #0E282E;
-}
-
-.section-4 {
-	background-color: #063647;
-	padding: 0.2rem;
-}
-
-a.nav-item {
-	color: #dfdfdf;
-}
-
-a.nav-item:hover {
+nav ul li a {
+	text-decoration: none;
 	color: #fff;
 }
-
-.avatar{
-	height:200px;
-	border-radius: 50%;
+section {
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: #f8f9fad7;
+	border: #333;
 }
-
-.intro-description{
-	padding-top: 1rem;
+section#about{
+	margin-top: 70px;
 }
-
-.social-container img{
-	max-width:100%;
-	max-height:175px;
-	margin-bottom:15px;
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
 }
-
-.project-figure {
-	margin: 0 auto 1rem auto;
-	max-height: 256px;
-	max-width: 256px;
+.project {
+	width: calc(50% - 20px);
+	background-color: #f8f9fa8a;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
-.project-text {
-	text-align: justify;
+.project img {
+	width: 80%; /* Adjust image size as needed */
+	height: auto;
+	border-radius: 5px;
 }
-
-.box {
-	background-color: transparent;
-	border: 2px solid rgba(7, 59, 79, 0.5);
+.contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
 }
-
-.title {
-	color: #fff;
-	text-align: left;
-	margin-bottom: 2rem;
+.platform {
+	margin: 10px;
+	width: max-content;
+	text-align: center;
 }
-
-.intro {
-	text-align: justify;
-	width: 80%;
+.platform img {
+	width: 100px;
+	height: auto;
+	margin-bottom: 5px;
+}
+.platform p {
 	margin: 0 auto;
-}
-
-.void-background {
-	background-color: transparent; 
-}
-
-@media screen and (max-width: 768px) {
-	.nav-menu {
-		background-color: #063647;
-	}
-
-	.nav-toggle:hover {
-		background-color: transparent;
-	}
-
-	.nav-toggle span {
-		background-color: #dfdfdf;
-	}
-
-	.nav-toggle span:hover {
-		background-color: #fff;
-	}
-
-}
+	margin-top: 10px;
+}	
