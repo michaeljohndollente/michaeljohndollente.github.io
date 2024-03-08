@@ -69,7 +69,7 @@ section#about{
 	align-items: center;
 }
 .project img {
-	width: 80%; /* Adjust image size as needed */
+	width: 80%; 
 	height: auto;
 	border-radius: 5px;
 }
@@ -81,7 +81,8 @@ section#about{
 }
 .platform {
 	margin: 10px;
-	width: max-content;
+	margin-bottom: 20px;
+	width: calc(40% - 20px);
 	text-align: center;
 }
 .platform img {
