@@ -97,7 +97,7 @@ section#about div {
 .download-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #858585;
+    background-color: #699AB3;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -107,7 +107,7 @@ section#about div {
 }
 
 .download-button:hover {
-    background-color: #535353;
+    background-color: #4a6e80;
 }
 
 .project img {
