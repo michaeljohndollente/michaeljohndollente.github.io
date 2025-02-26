@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'system-ui';
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -108,35 +108,38 @@ section#about img {
 
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    justify-content: space-around; /* Distribute items evenly across the width */
+    align-items: center; /* Align icons and text vertically */
+    flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+    gap: 20px; /* Add space between items for better readability */
+    padding: 20px; /* Add padding to the container for spacing */
 }
 
 .platform {
-    text-align: center;
-    max-width: 300px;
+    text-align: center; /* Center the content inside each platform */
+    flex: 1; /* Make each platform take up equal space */
+    min-width: 150px; /* Prevent items from shrinking too small */
+    max-width: 300px; /* Prevent items from expanding too large */
 }
 
+
 .platform img {
-    width: 40%;
+    width: 100px; /* Sets the size of the icons */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Adds space between the icon and text */
 }
 
 .platform p {
-    margin: 10px 0 0;
+    margin: 0; 
+    font-size: 14px; /* Optional: Adjusts the text size */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    flex-direction: column; /* Stacks items vertically */
+        gap: 10px; /* Adds space between items */
     }
 
     section {
@@ -164,8 +167,12 @@ section#about img {
         font-size: 90%;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    nav ul {
+        justify-content: space-between; /* Reduce spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Scale down font size for smaller viewports */
     }
 
     section {
@@ -181,7 +188,19 @@ section#about img {
     }
 
     .platform img {
-        width: 60px;
+        width: 40%; /* Slightly larger icons for mobile */
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items horizontally */
+        gap: 15px; /* Adds spacing between items */
+    }
+
+    .platform {
+        text-align: center;
+        width: 100%; /* Ensures each platform takes full width if needed */
     }
 
     .download-button {
