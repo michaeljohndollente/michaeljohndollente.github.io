@@ -3,114 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael John Dollente | Portfolio</title>
-    <link rel="icon" type="icon" href="assets/img/laptop-flat.png">
-	<link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portfolio — Michael John M. Dollente</title>
+    <link rel="icon" type="image/png" href="assets/img/laptop-flat.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <a href="#top" class="logo">MJD</a>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <img src="assets/img/profile-pic.jpg" alt="">
-        <div>
-            <h1>About Me</h1>
-            <h2>Hi! I'm Michael John</h2>
-            <p>
-                and It's a pleasure to have you here. I am a dedicated mobile developer with over two years of experience, now specializing in <b>React Native</b> development and with <b>Kotlin</b> and <b>Java</b>. My expertise lies in building dynamic, user-friendly cross-platform applications that deliver seamless performance and intuitive user interfaces.
-            </p>
-            <p>
-                Beyond mobile development, I have also worked on web development projects, broadening my perspective and enabling seamless integrations across various platforms and technologies.
+
+    <section class="hero" id="top">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-subtitle">Mobile Developer</div>
+                <h1>Crafting Fast, Secure, and Reliable Apps</h1>
+                <p class="hero-description">
+                    Specializing in Kotlin, Java, and React Native, I build production ready applications with a focus on performance, security, and user experiences.
                 </p>
-            <p>Creating impactful applications that solve real-world problems and delight users is my passion. Let's collaborate to build something amazing together!</p>
+                <a href="#work" class="cta-button">View My Work</a>
+            </div>
+            <img src="assets/img/profile-pic.jpg" alt="Michael John M. Dollente" class="hero-photo">
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section id="work">
+        <h2 class="section-title">Recent Work</h2>
+        
+        <!-- Mobile Development Section -->
+        <div class="work-category-header">
+            <h3 class="category-title">
+                <span class="category-icon">📱</span>
+                Mobile Development
+            </h3>
+            <p class="category-description">Creating intuitive mobile experiences</p>
+        </div>
+        
+        <div class="work-grid">
+
+            <div class="work-item" data-image="assets/img/mrjams-mobile.png" data-title="Mr Jams - Mobile" data-github="https://drive.google.com/file/d/15-VVQkB1dqEK1Fj4m4_kx6uw5AmbtCVf/view">
+                <div class="work-image">
+                    <img src="assets/img/mrjams-mobile.png" alt="Mr Jams">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Android App - Java</div>
+                    <h3 class="work-title">Mr Jams</h3>
+                    <p class="work-description">A thesis project featuring a location-based mapping appointment system designed to provide accurate, real-time location tracking and navigation, enhancing accessibility and decision-making for users.</p>
+                </div>
+            </div>
             
-            <a href="https://drive.google.com/file/d/1gZgcEfTLuTo8oeS6KjyEe4GNVjuAn1Qk/view?usp=drive_link" download="your-file.txt" class="download-button">
-                View My Resume
-            </a>
-        </div>
-    </section>
-    <section id="projects">
-        <h1>Projects (Mobile)</h1>
-        <div class="container">
-            <div class="project">
-                <img src="assets/img/mrjams-mobile.png" alt="mrjams-mobile">
-                <a href="https://drive.google.com/file/d/15-VVQkB1dqEK1Fj4m4_kx6uw5AmbtCVf/view?usp=drive_link"><h3>MR JAMS (Mobile)</h3></a>
-                <p>A thesis project featuring a location-based mapping appointment system designed to provide accurate, real-time location tracking and navigation, enhancing accessibility and decision-making for users.</p>
+            <div class="work-item" data-image="assets/img/weather-app.png" data-title="Weather App" data-github="https://github.com/michaeljohndollente/WeatherApp">
+                <div class="work-image">
+                    <img src="assets/img/weather-app.png" alt="Weather App">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Android App - Kotlin</div>
+                    <h3 class="work-title">Weather App</h3>
+                    <p class="work-description">A sleek and user-friendly weather application providing real-time forecasts, detailed weather conditions, and customizable alerts to help you stay prepared, rain or shine.</p>
+                </div>
             </div>
-            <div class="project">
-                <img src="assets/img/weather-app.png" alt="WeatherApp">
-                <a href="https://github.com/michaeljohndollente/WeatherApp"><h3>Weather Application</h3></a>
-                <p>A sleek and user-friendly weather application providing real-time forecasts, detailed weather conditions, and customizable alerts to help you stay prepared, rain or shine.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/product-list.png" alt="Product-list">
-                <a href="https://github.com/michaeljohndollente/Product-List"><h3>Product List</h3></a>
-                <p>A simple and efficient product list application to organize, manage, and track your items with ease, sorting, and customizable categories.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/note-app.png" alt="Note App">
-                <a href="https://github.com/michaeljohndollente/note-application"><h3>Note Application</h3></a>
-                <p>A lightweight note-taking application for securely capturing and organizing your ideas locally, with easy-to-use features and offline access.</p>
-            </div>
-			<div class="project">
-                <img src="assets/img/people-list.png" alt="Friend-ster">
-                <a href="https://github.com/michaeljohndollente/friend-ster"><h3>Friend Ster</h3></a>
-                <p>A simple people list application to manage and organize contacts, with features to view friends, view profiles, and track relationships easily.</p>
+
+            <div class="work-item" data-image="assets/img/note-app.png" data-title="Note App" data-github="https://github.com/michaeljohndollente/note-application">
+                <div class="work-image">
+                    <img src="assets/img/note-app.png" alt="Note App">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Android App - Kotlin</div>
+                    <h3 class="work-title">Note App</h3>
+                    <p class="work-description">A lightweight note-taking application for securely capturing and organizing your ideas locally, with easy-to-use features and offline access.</p>
+                </div>
             </div>
         </div>
+
+        <!-- Web Development Section -->
+        <div class="work-category-header" style="margin-top: 6rem;">
+            <h3 class="category-title">
+                <span class="category-icon">🌐</span>
+                Web Development
+            </h3>
+            <p class="category-description">Building responsive and performant web applications</p>
+        </div>
+        
+        <div class="work-grid">
+            <div class="work-item" data-image="assets/img/mrjams-web.png" data-title="Mr Jams - Web" data-github="https://drive.google.com/file/d/1JEa6YQRrJ6XDYDa78OXeJnaRylBcZUVX/view">
+                <div class="work-image">
+                    <img src="assets/img/mrjams-web.png" alt="Mr Jams - Web">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Laravel Web Application</div>
+                    <h3 class="work-title">Mr Jams - Web</h3>
+                    <p class="work-description">A thesis project featuring a location-based mapping appointment system designed to provide accurate, real-time location tracking and navigation, enhancing accessibility and decision-making for users.</p>
+                </div>
+            </div>
+
+            <div class="work-item" data-image="assets/img/brackets-dashboard.png" data-title="Inventory Management System" data-github="https://tri-aire-inventory.com/">
+                <div class="work-image">
+                    <img src="assets/img/brackets-dashboard.png" alt="Inventory Management System">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Laravel Web Application</div>
+                    <h3 class="work-title">Inventory Management System</h3>
+                    <p class="work-description">An efficient Inventory Management System to track, organize, and manage stock levels, ensuring streamlined operations and reducing inventory errors.</p>
+                </div>
+            </div>
+
+            <div class="work-item" data-image="assets/img/ranking.PNG" data-title="Coin Ranking" data-github="https://github.com/michaeljohndollente/coin-ranking">
+                <div class="work-image">
+                    <img src="assets/img/ranking.PNG" alt="Coin Ranking">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Web Application</div>
+                    <h3 class="work-title">Coin Ranking</h3>
+                    <p class="work-description">A Coin Ranking API web app allows users to access and display real-time cryptocurrency data, such as prices, market capitalization, volume, and rankings.</p>
+                </div>
+            </div>
+
+            <div class="work-item" data-image="assets/img/eonet.PNG" data-title="Earth Observatory Natural Event Tracker" data-github="https://github.com/michaeljohndollente/eonet">
+                <div class="work-image">
+                    <img src="assets/img/eonet.PNG" alt="Earth Observatory Natural Event Tracker">
+                </div>
+                <div class="work-content">
+                    <div class="work-category">Web Application</div>
+                    <h3 class="work-title">Earth Observatory Natural Event Tracker</h3>
+                    <p class="work-description">An Earth Observatory Natural Event Tracker web app API enables users to access and monitor real-time data about natural events such as wildfires, hurricanes, earthquakes, and volcanic eruptions.</p>
+                </div>
+            </div>
+        </div>
+
+        
     </section>
-    <section id="projects">
-        <h1>Projects (Web)</h1>
-        <div class="container">
-            <div class="project">
-                <img src="assets/img/mrjams-web.png" alt="mrjams-web">
-                <a href="https://drive.google.com/file/d/1JEa6YQRrJ6XDYDa78OXeJnaRylBcZUVX/view?usp=drive_link"><h3>MR JAMS (Web App)</h3></a>
-                <p>A thesis project featuring a location-based mapping appointment system designed to provide accurate, real-time location tracking and navigation, enhancing accessibility and decision-making for users.</p>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <div class="section-subtitle">Get In Touch</div>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 2rem auto 0;">
+                I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out.
+            </p>
+
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a>michaeljohn.dollente@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">☎</div>
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">
+                        <a>Viber: +63 976 267 3916</a>
+                    </div>
+                    <div class="contact-value">
+                        <a>WhatsApp: +63 915 751 7767</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">⛫</div>
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                        <a>Taguig City, Philippines</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">⎙</div>
+                    <div class="contact-label">Resume</div>
+                    <div class="contact-value">
+                        <a href="https://drive.google.com/uc?export=download&id=1mhznQk3ARjkvLjkEDD5BgeGFZwGYU9u7" download="Michael John M. Dollente.pdf">Download PDF</a>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <img src="assets/img/brackets-dashboard.png" alt="tri-aire-ims">
-                <a href="https://tri-aire-inventory.com/"><h3>Inventory Management System</h3></a>
-                <p>An efficient Inventory Management System to track, organize, and manage stock levels, ensuring streamlined operations and reducing inventory errors.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/ranking.PNG" alt="coin-ranking">
-                <a href="https://github.com/michaeljohndollente/coin-ranking"><h3>Coin Ranking</h3></a>
-                <p>A Coin Ranking API web app allows users to access and display real-time cryptocurrency data, such as prices, market capitalization, volume, and rankings. The app integrates with the CoinRanking API to provide an interactive interface for tracking and comparing cryptocurrencies, featuring search, filtering, sorting, and detailed charts or graphs for better market analysis.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/eonet.PNG" alt="eonet">
-                <a href=""><h3>EONET</h3></a>
-                <p>An Earth Observatory Natural Event Tracker web app API enables users to access and monitor real-time data about natural events such as wildfires, hurricanes, earthquakes, and volcanic eruptions. It provides detailed event information, including location, magnitude, timestamps, and satellite imagery, allowing developers to integrate natural event tracking into their applications for research, disaster management, or public awareness.</p>
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h3 style="font-family: 'Impact', sans-serif; font-weight: 400; font-size: 1.8rem; margin-bottom: 2rem; margin-top: 4rem;">Send me a Message</h3>
+                <form class="contact-form" action="https://formspree.io/f/xjybgvyq" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="message">Message <span class="char-count">(0/500)</span></label>
+                        <textarea id="message" name="message" rows="6" maxlength="500" required></textarea>
+                    </div>
+ 
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-		<div class="contact-container">
-			<div class="platform">
-				<a href="mailto:michaeljohn.dollente@gmail.com"><img src="assets/img/mail.png" alt="Email"></a>
-				<p>michaeljohn.dollente@gmail.com</p>
-			</div>
-			<div class="platform">
-				<a href="tel:+639762673916"><img src="assets/img/phone.png" alt="Phone"></a>
-				<p>+639762673916</p>
-			</div>
-			<div class="platform">
-				<a href="https://www.linkedin.com/in/michael-john-dollente-11877420b"><img src="assets/img/linkedin.png" alt="linkedin"></a>
-				<p>Michael John Dollente</p>
-			</div>
-			<div class="platform">
-				<a href="https://github.com/michaeljohndollente"><img src="assets/img/github.png" alt="github"></a>
-				<p>michaeljohndollente</p>
-			</div>
-		</div>
-    </section>
-	<footer>
-        <p>&copy; 2025 Michael John Dollente</p>
-	</footer>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/michael-john-dollente-11877420b/">LinkedIn</a>
+            <a href="https://github.com/michaeljohndollente">GitHub</a>
+        </div>
+        <p>&copy; 2026 Michael John M. Dollente. All rights reserved.</p>
+    </footer>
+
+    <div class="work-preview-modal" id="workPreviewModal">
+        <div class="work-preview-title" id="previewTitle"></div>
+        <img id="previewImage" src="" alt="Project Preview">
+        <div class="work-preview-close">&times;</div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
